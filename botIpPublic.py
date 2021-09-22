@@ -38,6 +38,7 @@ def getIpPublic():
 	return ipPublic
 
 def ip_command(update: Update, context:CallbackContext):
+	#Filter with my id for block the rests of users
 	if str(update.message.chat_id) == '576384241':
 		ip=getIpPublic()
 		update.message.reply_text('This is your Public Ip ')
