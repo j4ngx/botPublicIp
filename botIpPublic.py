@@ -39,7 +39,7 @@ def getIpPublic():
 
 def ip_command(update: Update, context:CallbackContext):
 	#Filter with my id for block the rests of users
-	if str(update.message.chat_id) == '576384241':
+	if str(update.message.chat_id) == 'YOUR_ID_USER':
 		ip=getIpPublic()
 		update.message.reply_text('This is your Public Ip ')
 		update.message.reply_text(ip)
@@ -49,7 +49,7 @@ def ip_command(update: Update, context:CallbackContext):
 def main():
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("2029674413:AAGCmkQSjXmgC94Sn7Yo5j2mwKdUFlspO4E")
+    updater = Updater("TOKEN_BOT_TELEGRAM")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
